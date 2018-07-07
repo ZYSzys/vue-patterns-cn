@@ -1,6 +1,6 @@
 # vue-patterns
 
-[English](README.md) | [中文](README-zh.md)
+[English](README-en.md) | [中文](README.md)
 
 有用的Vue模式，技巧，提示和技巧以及有帮助的精选链接。
 

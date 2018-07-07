@@ -1,4 +1,7 @@
-# vue-patterns
+# vue-patterns-cn
+
+英文原版：[learn-vuejs](https://github.com/learn-vuejs/vue-patterns)  
+中文翻译：[ZYSzys](https://github.com/ZYSzys)
 
 [English](README-en.md) | [中文](README.md)
 

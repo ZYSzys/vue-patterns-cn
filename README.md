@@ -1,11 +1,14 @@
 # vue-patterns-cn
 
+> 有用的Vue模式，技巧，提示和技巧以及有帮助的精选链接。
+
+## 翻译
+
 英文原版：[learn-vuejs](https://github.com/learn-vuejs/vue-patterns)  
-中文翻译：[ZYSzys](https://github.com/ZYSzys)
+简体中文：[ZYSzys](https://github.com/ZYSzys/vue-patterns-cn)  
+繁体中文：[yoyoys](https://github.com/yoyoys/vue-patterns-cht)  
 
-[English](README-en.md) | [中文](README.md)
-
-有用的Vue模式，技巧，提示和技巧以及有帮助的精选链接。
+## 目录
 
 - [组件声明](#组件声明)
   - [单文件组件 (SFC) - 最常用](#单文件组件-sfc---最常用)
@@ -244,6 +247,7 @@ export default {
 
 #### 参考:
 
+* [Official - Props](https://vuejs.org/v2/guide/components-props.html)
 * [Vue.js Component Communication Patterns](https://alligator.io/vuejs/component-communication/)
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
@@ -253,6 +257,7 @@ export default {
 
 #### 参考:
 
+* [Official - Custom Events](https://vuejs.org/v2/guide/components-custom-events.html)
 * [Leveraging Vue events to reduce prop declarations](https://itnext.io/leveraging-vue-events-to-reduce-prop-declarations-e38f5dce2aaf)
 * [Vue.js Component Hooks as Events](https://alligator.io/vuejs/component-event-hooks/)
 * [Creating a Global Event Bus with Vue.js](https://alligator.io/vuejs/global-event-bus/)
@@ -421,6 +426,8 @@ export default {
 };
 ```
 #### 参考
+
+* [Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
 * [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## 动态组件
@@ -473,6 +480,10 @@ export default {
 </script>
 ```
 
+#### References
+ 
+* [Official - Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
+
 ### 扩展
 
 当你想要扩展单个vue组件时
@@ -496,6 +507,7 @@ export default {
 
 #### 参考:
 
+* [Official - extends](https://vuejs.org/v2/api/#extends)
 * [Extending VueJS Components](https://medium.com/js-dojo/extending-vuejs-components-42fefefc688b)
 
 ### 混入
@@ -547,6 +559,7 @@ export default {
 
 #### 参考:
 
+* [Official - mixins](https://vuejs.org/v2/guide/mixins.html)
 * [Practical use of Components and Mixins in Vue JS](http://www.qcode.in/practical-use-of-components-and-mixins-in-vue-js/)
 
 
@@ -778,8 +791,7 @@ export default Mouse;
 
 ## 传递 Props
 
-Sometimes, you may want to pass props and listeners to child component without having to declare all child component's props.
-You can simply bind `$attrs` and `$listeners` to child component
+有时，您可能希望将 `props`和 `listeners`传递给子组件，而无需声明所有子组件的 `props`。 您可以在子组件中绑定 `$attrs` 和 `$listeners`，并将 [`inheritAttrs` 设置为 `false`](https://vuejs.org/v2/api/#inheritAttrs)（否则div和子组件都将接收属性）
 
 ```html
 <template>
@@ -791,7 +803,8 @@ You can simply bind `$attrs` and `$listeners` to child component
 
 <script>
 export default {
-  name: 'PassingPropsSample'
+  name: 'PassingPropsSample',
+  inheritAttrs: false,
   props: {
     title: {
       type: String,

@@ -26,11 +26,11 @@
   - [带is属性的组件](#带is属性的组件)
 - [构建](#构建)
   - [基础构建](#基础构建)
-  - [扩展](#扩展)
+  - [继承](#继承)
   - [混入](#混入)
   - [插槽 (默认)](#插槽-默认)
-  - [Named 插槽](#named-插槽)
-  - [Scoped 插槽](#scoped-插槽)
+  - [具名插槽](#具名插槽)
+  - [作用域插槽](#作用域插槽)
   - [渲染 Props](#渲染-props)
 - [传递 Props](#传递-props)
 - [高阶组件 (HOC)](#高阶组件-HOC)
@@ -427,7 +427,7 @@ export default {
 ```
 #### 参考
 
-* [Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
+* [Official - Conditional Rendering](https://vuejs.org/v2/guide/conditional.html)
 * [Difference Between v-if and v-show [With Video at End]](https://dzone.com/articles/difference-between-v-if-and-v-show-with-a-video)
 
 ## 动态组件
@@ -452,6 +452,8 @@ export default {
 
 #### 参考
 
+* [Official - Dynamic Components](https://vuejs.org/v2/guide/components.html#Dynamic-Components)
+* [Official - Dynamic & Async Components](https://vuejs.org/v2/guide/components-dynamic-async.html)
 * [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
 
 ## 构建
@@ -484,9 +486,9 @@ export default {
  
 * [Official - Composing with Components](https://vuejs.org/v2/guide/#Composing-with-Components)
 
-### 扩展
+### 继承
 
-当你想要扩展单个vue组件时
+当你想要继承单个vue组件时
 
 ```html
 <template>
@@ -600,11 +602,12 @@ export default {
 
 #### 参考:
 
+* [Official - Slot Content](https://vuejs.org/v2/guide/components-slots.html#Slot-Content)
 * [Understanding Component Slots with Vue.js](https://alligator.io/vuejs/component-slots/)
 * [Composing Custom Elements With Slots And Named Slots](https://alligator.io/web-components/composing-slots-named-slots/)
 * [Writing Abstract Components with Vue.js](https://alligator.io/vuejs/vue-abstract-components/)
 
-### Named 插槽
+### 具名插槽
 
 BaseLayout.vue
 
@@ -639,7 +642,11 @@ App.vue
 </base-layout>
 ```
 
-### Scoped 插槽
+#### 参考
+
+* [Official - Named Slots](https://vuejs.org/v2/guide/components-slots.html#Named-Slots)
+
+### 作用域插槽
 
 ```html
 <template>
@@ -703,6 +710,7 @@ export default {
 
 #### 参考:
 
+* [Official - Scoped Slots](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots)
 * [Getting Your Head Around Vue.js Scoped Slots](https://medium.com/js-dojo/getting-your-head-around-vue-js-scoped-slots-281bf82a1e4e)
 * [Understanding scoped slots in Vue.js](https://medium.com/corebuild-software/understanding-scoped-slots-in-vue-js-db5315a42391)
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)

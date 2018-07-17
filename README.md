@@ -806,9 +806,10 @@ export default Mouse;
 
 ## 传递 Props
 
-有时，您可能希望将 `props`和 `listeners`传递给子组件，而无需声明所有子组件的 `props`。 
+有时，你可能希望将 `props`和 `listeners`传递给子组件，而无需声明所有子组件的 `props`。 
 您可以在子组件中绑定 `$attrs` 和 `$listeners`，并将 [`inheritAttrs` 设置为 `false`](https://vuejs.org/v2/api/#inheritAttrs)（否则div和子组件都将接收属性）
 
+子组件中:
 ```html
 <template>
   <div>
@@ -831,7 +832,7 @@ export default {
 </script>
 ```
 
-From parent component, you can do like this:
+在父组件中，你可以这样做:
 ```html
 <template>
   <passing-props-sample

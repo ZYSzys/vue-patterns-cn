@@ -41,6 +41,7 @@
   - [错误捕获钩子](#错误捕获钩子)
 - [高效提示](#高效提示)
 - [有帮助的链接](#有帮助的链接)
+  - [风格指南](#风格指南)
   - [重构](#重构)
   - [状态管理](#状态管理)
   - [Vuex](#vuex)
@@ -57,10 +58,11 @@
   - [Flowtype](#flowtype)
   - [GraphQL](#graphql)
   - [Misc](#misc)
+- [全栈Vue图书](#全栈Vue图书)
 
 ## 组件声明
 
-### 单文件组件 (SFC) - 最常用
+### [单文件组件 (SFC)](https://vuejs.org/v2/guide/single-file-components.html) - 最常用
 
 ```html
 <template>
@@ -113,7 +115,7 @@ Vue.component('my-btn', {
 });
 ```
 
-### 渲染函数
+### [渲染函数](https://vuejs.org/v2/guide/render-function.html)
 
 ```js
 Vue.component('my-btn', {
@@ -140,7 +142,7 @@ Vue.component('my-btn', {
 });
 ```
 
-### JSX
+### [JSX](https://vuejs.org/v2/guide/render-function.html#JSX)
 
 ```jsx
 Vue.component('my-btn', {
@@ -196,6 +198,8 @@ export default MyBtn extends Vue {
 
 #### 参考:
 
+* [Official - Single File Component](https://vuejs.org/v2/guide/single-file-components.html)
+* [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 * [7 Ways To Define A Component Template in VueJS](https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d)
 
 ## 组件通信
@@ -252,6 +256,7 @@ export default {
 * [Creating Custom Inputs With Vue.js](https://www.smashingmagazine.com/2017/08/creating-custom-inputs-vue-js/)
 * [Vue Sibling Component Communication](https://vegibit.com/vue-sibling-component-communication/)
 * [Managing State in Vue.js](https://medium.com/fullstackio/managing-state-in-vue-js-23a0352b1c87)
+* [Vue.js communication part 2: parent-child components](https://gambardella.info/2017/09/13/vue-js-communication-part-2-parent-child-components/)
 
 ## 组件事件处理
 
@@ -716,6 +721,7 @@ export default {
 * [Scoped Component Slots in Vue.js](https://alligator.io/vuejs/scoped-component-slots/)
 * [The Trick to Understanding Scoped Slots in Vue.js](https://adamwathan.me/the-trick-to-understanding-scoped-slots-in-vuejs/)
 * [The Power of Scoped Slots in Vue](https://pineco.de/power-scoped-slots-vue/)
+* [Building a list keyboard control component with Vue.js and scoped slots](https://medium.com/@tkwebdev/building-a-list-keyboard-control-component-with-vue-js-and-scoped-slots-c74db4fcf84f)
 
 ### 渲染 Props
 
@@ -794,12 +800,14 @@ export default Mouse;
 
 #### 参考:
 
+* [Official - Render Functions & JSX](https://vuejs.org/v2/guide/render-function.html)
 * [Leveraging Render Props in Vue](https://medium.com/@dillonchanis/leveraging-render-props-in-vue-7eb9a19c262d)
 * [Use a Vue.js Render Prop!](https://medium.com/js-dojo/use-a-vue-js-render-prop-98880bc44e05)
 
 ## 传递 Props
 
-有时，您可能希望将 `props`和 `listeners`传递给子组件，而无需声明所有子组件的 `props`。 您可以在子组件中绑定 `$attrs` 和 `$listeners`，并将 [`inheritAttrs` 设置为 `false`](https://vuejs.org/v2/api/#inheritAttrs)（否则div和子组件都将接收属性）
+有时，您可能希望将 `props`和 `listeners`传递给子组件，而无需声明所有子组件的 `props`。 
+您可以在子组件中绑定 `$attrs` 和 `$listeners`，并将 [`inheritAttrs` 设置为 `false`](https://vuejs.org/v2/api/#inheritAttrs)（否则div和子组件都将接收属性）
 
 ```html
 <template>
@@ -1025,7 +1033,7 @@ watch: {
 
 ## 有帮助的链接
 
-### Style Guide
+### 风格指南
 
 * [Official - Style Guide](https://vuejs.org/v2/style-guide/)
 * [Vue.js Component Style Guide](https://github.com/pablohpsilva/vuejs-component-style-guide)
@@ -1036,6 +1044,7 @@ watch: {
 * [Clean up your Vue modules with ES6 Arrow Functions](https://gist.github.com/JacobBennett/7b32b4914311c0ac0f28a1fdc411b9a7)
 * [Examples of Vue’s Clean Code](https://webdesign.tutsplus.com/tutorials/examples-of-vues-clean-code--cms-29619)
 * [Optimizing Performance with Computed Properties](https://codingexplained.com/coding/front-end/vue-js/optimizing-performance-computed-properties)
+* [Simplify Your Components with Computed Setters](https://tahazsh.com/vuebyte-computed-setters)
 
 ### 状态管理
 
@@ -1053,6 +1062,9 @@ watch: {
 * [Composing actions with Vuex](https://codeburst.io/composing-actions-with-vuex-b63466264a37)
 * [How to Build Complex, Large-Scale Vue.js Apps With Vuex](https://code.tutsplus.com/tutorials/how-to-build-complex-large-scale-vuejs-applications-with-vuex--cms-30952)
 * [Should I Store This Data in Vuex?](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/)
+* [Anyway, this is how to use v-model with Vuex. Computed setter in action.](https://itnext.io/anyway-this-is-how-to-use-v-model-with-vuex-computed-setter-in-action-320eb682c976)
+* [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)  * [Vuex getters are great, but don’t overuse them](https://codeburst.io/vuex-getters-are-great-but-dont-overuse-them-9c946689b414)
+* [5 Vuex Plugins For Your Next VueJS Project](https://medium.com/js-dojo/5-vuex-plugins-for-your-next-vuejs-project-df9902a70de2)
 
 ### Mobx
 
@@ -1161,3 +1173,9 @@ watch: {
 * [Introducing the Single Element Pattern](https://medium.freecodecamp.org/introducing-the-single-element-pattern-dfbd2c295c5d)
 * [Control DOM Outside Your Vue.js App with portal-vue](https://alligator.io/vuejs/portal-vue/)
 * [Add i18n and manage translations of a Vue.js powered website](https://medium.com/hypefactors/add-i18n-and-manage-translations-of-a-vue-js-powered-website-73b4511ca69c)
+* [Managing Complex Waiting Experiences on Web UIs](https://medium.com/@fkadev/managing-complex-waiting-experiences-on-web-uis-29534d2d92a8)
+* [Vue.js — Forms, components and considerations](https://blog.webf.zone/vue-js-forms-components-and-considerations-d81b3ffe9efb)
+
+## 全栈Vue图书
+
+[![Fullstack Vue Book](https://www.fullstack.io/assets/images/vue-github.png)](https://gumroad.com/a/462206067)

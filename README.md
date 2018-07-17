@@ -58,7 +58,7 @@
   - [Flowtype](#flowtype)
   - [GraphQL](#graphql)
   - [Misc](#misc)
-- [全栈Vue图书](#全栈Vue图书)
+- [全栈Vue图书](#全栈-vue-图书)
 
 ## 组件声明
 
@@ -1176,6 +1176,6 @@ watch: {
 * [Managing Complex Waiting Experiences on Web UIs](https://medium.com/@fkadev/managing-complex-waiting-experiences-on-web-uis-29534d2d92a8)
 * [Vue.js — Forms, components and considerations](https://blog.webf.zone/vue-js-forms-components-and-considerations-d81b3ffe9efb)
 
-## 全栈Vue图书
+## 全栈 Vue 图书
 
 [![Fullstack Vue Book](https://www.fullstack.io/assets/images/vue-github.png)](https://gumroad.com/a/462206067)

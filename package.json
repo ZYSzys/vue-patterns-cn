@@ -1,0 +1,17 @@
+{
+  "name": "vue-patterns-cn",
+  "version": "1.0.0",
+  "description": "vue-patterns-cn",
+  "main": "",
+  "repository": "https://github.com/ZYSzys/vue-patterns-cn",
+  "author": "ZYSzys <zyszys98@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "0.14.2"
+  }
+}

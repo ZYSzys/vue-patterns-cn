@@ -1,0 +1,10 @@
+<template>
+  <iframe
+    src="https://ghbtns.com/github-btn.html?user=ZYSzys&repo=vue-patterns-cn&type=star&count=true&size=large"
+    frameborder="0"
+    scrolling="0"
+    width="145px"
+    height="30px"
+  >
+  </iframe>
+</template>

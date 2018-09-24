@@ -1,6 +1,6 @@
 module.exports = {
   base: '/vue-patterns-cn/',
-  title: 'Vue Patterns',
+  title: 'Vue Patterns CN',
   description: '有用的Vue模式，技巧，提示和技巧以及有帮助的精选链接。',
   serviceWorker: true,
   themeConfig: {
@@ -12,10 +12,10 @@ module.exports = {
       '/': {
         lastUpdated: 'Last Updated',
         nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Docs', link: '/patterns/' },
+          { text: '首页', link: '/' },
+          { text: '文档', link: '/patterns/' },
           {
-            text: 'Translations',
+            text: '翻译',
             items: [{
                 text: 'English',
                 link: 'https://learn-vuejs.github.io/vue-patterns/',
@@ -28,7 +28,9 @@ module.exports = {
           },
         ],
         sidebar: [
-          ['/patterns/', 'Patterns'],
+          ['/patterns/', '模式'],
+          ['/useful-links/', '链接'],
+          ['/sponsors/', '赞助商']
         ],
       },
     },
